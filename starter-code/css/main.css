@@ -3,7 +3,11 @@ Colors to use:
 dark blue: #06365f
 light blue: #1c5380
 */
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
@@ -12,10 +16,25 @@ body {
 ul {
   list-style: none;
 }
-#top-half {
+.position {
   display: flex;
+  justify-content: flex-end;
+  padding-right: 15%;
+}
+.bold {
+  font-weight: bold;
+}
+.bold-blue {
+  color: #1c5380;
+  font-weight: bold;
+  font-size: 14px;
+}
+.break {
+  margin-bottom: 10px;
+}
+#top-half {
   width: 100%;
-  height: 400px;
+  height: 300px;
   background: linear-gradient(#1c5380, #06365f);
 }
 #logo-login {
@@ -23,14 +42,19 @@ ul {
   align-items: center;
   justify-content: space-between;
   width: 40%;
-  margin: 0 auto;
-  border: 1px solid black;
-}
-#logo {
-  float: left;
 }
 #logo img {
   width: 90%;
+}
+#login span {
+  color: rgba(255,255,255,0.8)
+}
+#button-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 40px;
+  margin-top: -10px;
 }
 #login button {
   background: linear-gradient(#1c5380, #06365f);
@@ -39,11 +63,49 @@ ul {
   text-align: center;
   padding: 5px;
   width: 100px;
-  border-radius: 2px;
+  border-radius: 4px;
+}
+#content-container {
+  width: 100%;
 }
 #content {
-  position: absolute;
+  margin-top: -60px;
   width: 40%;
-  margin-top: -200px;
+  padding: 20px 30px;
   background-color: white;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,0.2);
+  color: #4c4c4c;
 }
+#content h2 {
+  width: 70%;
+  line-height: 30px;
+  color: #06365f;
+  margin-bottom: 20px;
+}
+#content p {
+  font-size: 15px;
+}
+#big-img {
+  position: absolute;
+  margin-top: -510px;
+  padding-left: 15%;
+}
+#stores {
+  margin-top: 30px;
+}
+#stores img {
+  height: 40px;
+}
+#list {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+#algarroba {
+  color: #4c4c4c;
+  font-size: 14px;
+} 
+
